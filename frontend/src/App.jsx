@@ -5,6 +5,7 @@ import Slider from './components/Layout/Slider/Slider.jsx';
 import Categories from './components/Layout/Categories/Categories.jsx';
 import Products from './components/Products/Products.jsx';
 import './App.css'
+import Campaigns from './components/Campaigns/Campaigns.jsx';
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Slider/>
         <Categories/>
         <Products/>
+        <Campaigns/>
         <Policy/>
         <Footer/>
     </div>

@@ -7,7 +7,9 @@ import Products from './components/Products/Products.jsx';
 import Campaigns from './components/Campaigns/Campaigns.jsx';
 import Blogs from './components/Blogs/Blogs.jsx';
 import Brands from './components/Brands/Brands.jsx';
+import CampaignSingle from './components/CampaignSingle/CampaignSingle.jsx';
 import './App.css'
+
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
         <Products/>
         <Blogs/>
         <Brands/>
+        <CampaignSingle/>
         <Policy/>
         <Footer/>
     </div>

@@ -6,6 +6,7 @@ import Categories from './components/Layout/Categories/Categories.jsx';
 import Products from './components/Products/Products.jsx';
 import Campaigns from './components/Campaigns/Campaigns.jsx';
 import Blogs from './components/Blogs/Blogs.jsx';
+import Brands from './components/Brands/Brands.jsx';
 import './App.css'
 
 
@@ -20,6 +21,7 @@ function App() {
         <Campaigns/>
         <Products/>
         <Blogs/>
+        <Brands/>
         <Policy/>
         <Footer/>
     </div>

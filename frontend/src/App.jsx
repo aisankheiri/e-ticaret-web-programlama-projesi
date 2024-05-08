@@ -1,34 +1,12 @@
-import Header from './components/Layout/Header/Header.jsx'
-import Footer from "./components/Layout/Footer/Footer.jsx";
-import Policy from './components/Layout/Policy/Policy.jsx';
-import Slider from './components/Layout/Slider/Slider.jsx';
-import Categories from './components/Layout/Categories/Categories.jsx';
-import Products from './components/Products/Products.jsx';
-import Campaigns from './components/Campaigns/Campaigns.jsx';
-import Blogs from './components/Blogs/Blogs.jsx';
-import Brands from './components/Brands/Brands.jsx';
-import CampaignSingle from './components/CampaignSingle/CampaignSingle.jsx';
-import './App.css'
-
-
+import "./App.css";
+import HomePage from "./pages/HomePage.jsx";
 
 function App() {
-
   return (
     <div>
-        <Header/>
-        <Slider/>
-        <Categories/>
-        <Products/>
-        <Campaigns/>
-        <Products/>
-        <Blogs/>
-        <Brands/>
-        <CampaignSingle/>
-        <Policy/>
-        <Footer/>
+      <HomePage />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

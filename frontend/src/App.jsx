@@ -4,9 +4,9 @@ import Policy from './components/Layout/Policy/Policy.jsx';
 import Slider from './components/Layout/Slider/Slider.jsx';
 import Categories from './components/Layout/Categories/Categories.jsx';
 import Products from './components/Products/Products.jsx';
-import './App.css'
 import Campaigns from './components/Campaigns/Campaigns.jsx';
-
+import Blogs from './components/Blogs/Blogs.jsx';
+import './App.css'
 
 
 function App() {
@@ -18,6 +18,8 @@ function App() {
         <Categories/>
         <Products/>
         <Campaigns/>
+        <Products/>
+        <Blogs/>
         <Policy/>
         <Footer/>
     </div>

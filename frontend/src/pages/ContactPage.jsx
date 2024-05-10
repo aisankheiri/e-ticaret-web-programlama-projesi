@@ -1,17 +1,17 @@
-import React from "react"
-import Header from "../components/Layout/Header/Header"
-import Policy from "../components/Layout/Policy/Policy"
-import Footer from "../components/Layout/Footer/Footer"
+import React from "react";
+import Header from "../components/Layout/Header/Header";
+import Policy from "../components/Layout/Policy/Policy";
+import Footer from "../components/Layout/Footer/Footer";
+import Contact from "../components/Contact/Contact";
 const ContactPage = () => {
   return (
     <React.Fragment>
-      <Header/>
-      
+      <Header />
+      <Contact />
       <Policy />
-      <Footer/>
-
+      <Footer />
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

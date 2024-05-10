@@ -1,12 +1,16 @@
 
 import "./App.css";
 import React from "react";
-import ContactPage from "./pages/ContactPage"
+import AuthPage from "./pages/AuthPage";
+
+// import ContactPage from "./pages/ContactPage"
 
 function App() {
   return (
     <React.Fragment>
-      <ContactPage/>
+      {/* <ContactPage/> */}
+      <AuthPage />
+  
     </React.Fragment>
   );
 }

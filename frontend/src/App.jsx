@@ -1,11 +1,13 @@
+
 import "./App.css";
-import HomePage from "./pages/HomePage.jsx";
+import React from "react";
+import ContactPage from "./pages/ContactPage"
 
 function App() {
   return (
-    <div>
-      <HomePage />
-    </div>
+    <React.Fragment>
+      <ContactPage/>
+    </React.Fragment>
   );
 }
 

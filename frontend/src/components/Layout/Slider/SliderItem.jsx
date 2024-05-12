@@ -18,6 +18,8 @@ const SliderItem = ({ imageSrc }) => {
 
 export default SliderItem;
 
+
+
 SliderItem.propTypes = {
   imageSrc: PropTypes.string,
 };

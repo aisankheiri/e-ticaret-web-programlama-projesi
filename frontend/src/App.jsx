@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
-import ProductDetailsPage from "./pages/ProductDetailsPage";
+import HomePage from "./pages/HomePage";
+// import ProductDetailsPage from "./pages/ProductDetailsPage";
 // import BlogDetailsPage from "./pages/BlogDetailsPage";
 // import BlogPage from "./pages/BlogPage";
 // import CartPage from "./pages/CartPage";
@@ -15,7 +16,8 @@ function App() {
       {/* <CartPage /> */}
       {/* <BlogPage/> */}
       {/* <BlogDetailsPage/> */}
-      <ProductDetailsPage/>
+      {/* <ProductDetailsPage/> */}
+      <HomePage/>
     </React.Fragment>
   );
 }

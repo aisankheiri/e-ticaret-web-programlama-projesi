@@ -1,4 +1,5 @@
 import "./Search.css";
+import Proptypes from "prop-types";
 const Search = ({ isSearchShow, setIsSearchShow }) => {
   return (
     <div className={`modal-search ${isSearchShow ? "show" : ""} `}>
@@ -61,3 +62,8 @@ const Search = ({ isSearchShow, setIsSearchShow }) => {
 };
 
 export default Search;
+
+Search.propTypes = {
+  isSearchShow: Proptypes.bool,
+  setIsSearchShow: Proptypes.func,
+};

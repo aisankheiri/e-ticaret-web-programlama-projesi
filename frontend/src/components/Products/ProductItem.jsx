@@ -2,9 +2,11 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartProvider";
 import "./ProductItem.css";
 import PropTypes from "prop-types";
+import { Link, useNavigate } from "react-router-dom";
 
 const ProductItem = ({ productItem }) => {
   const { addToCart, cartItems } = useContext(CartContext);
+  const navigate = useNavigate();
 
   const filteredCart = cartItems.find(
     (cartItem) => cartItem.id === productItem.id
@@ -58,9 +60,9 @@ const ProductItem = ({ productItem }) => {
           <button>
             <i className="bi bi-heart-fill"></i>
           </button>
-          <a href="#">
+          <Link to={`product/${productItem.id}`}>
             <i className="bi bi-eye-fill"></i>
-          </a>
+          </Link>
           <a href="#">
             <i className="bi bi-share-fill"></i>
           </a>

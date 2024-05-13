@@ -1,36 +1,32 @@
+import { useState } from "react";
 import "./Gallery.css";
+import productsData from "../../../data.json";
 const Galery = () => {
+  const [activeImg, setActiveImg] = useState(productsData[0].img.singleImage);
+
   return (
     <div className="product-gallery">
       <div className="single-image-wrapper">
-        <img src="img/products/product2/1.png" id="single-image" alt="" />
+        <img src={activeImg} id="single-image" alt="" />
       </div>
       <div className="product-thumb">
         <div className="glide__track" data-glide-el="track">
           <ol className="gallery-thumbs glide__slides">
-            <li className="glide__slide glide__slide--active">
-              <img
-                src="img/products/product2/1.png"
-                alt=""
-                className="img-fluid active"
-              />
-            </li>
-
-            <li className="glide__slide">
-              <img
-                src="img/products/product2/2.png"
-                alt=""
-                className="img-fluid"
-              />
-            </li>
-
-            <li className="glide__slide">
-              <img
-                src="img/products/product2/3.png"
-                alt=""
-                className="img-fluid"
-              />
-            </li>
+            {productsData[0].img.thumbs.map((itemImg, index) => (
+              <li
+                className="glide__slide glide__slide--active"
+                key={index}
+                onClick={() => setActiveImg(itemImg)}
+              >
+                <img
+                  src={itemImg}
+                  alt=""
+                  className={`img-fluid  ${
+                    itemImg === activeImg ? "active" : ""
+                  }`}
+                />
+              </li>
+            ))}
           </ol>
         </div>
         <div className="glide__arrows" data-glide-el="controls">

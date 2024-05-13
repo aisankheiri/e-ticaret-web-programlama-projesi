@@ -30,8 +30,6 @@ PrevBtn.propTypes = {
 
 const Products = () => {
   const [products] = useState(productsData);
-  const [cartItems, setCartItems] = useState([]);
-  console.log(cartItems);
 
   const sliderSettings = {
     dots: false,
@@ -40,8 +38,8 @@ const Products = () => {
     slidesToScroll: 1,
     nextArrow: <NextBtn />,
     prevArrow: <PrevBtn />,
-    autoplaySpeed :3000,
-    autoplay:true,
+    autoplaySpeed: 3000,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 992,
@@ -68,7 +66,7 @@ const Products = () => {
         <div className="product-wrapper product-carousel">
           <Slider {...sliderSettings}>
             {products.map((product) => (
-              <ProductItem productItem={product} setCartItems={setCartItems} key={product.id} />
+              <ProductItem productItem={product} key={product.id} />
             ))}
           </Slider>
 

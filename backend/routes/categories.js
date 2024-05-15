@@ -51,7 +51,7 @@ router.put("/:categoryId", async (req, res) => {
     const updates = req.body;
 
     const existingCategory = await Category.findById(categoryId);
-    if(!existingCategory){
+    if (!existingCategory) {
       return res.status(404).json({ error: "Category not found" });
     }
 
@@ -63,6 +63,21 @@ router.put("/:categoryId", async (req, res) => {
 
     res.status(200).json(updatedCategory);
   } catch (error) {
+    res.status(500).json({ error: "Server error." });
+  }
+});
+
+//Kategori silme (Delete)
+router.delete("/:categoryId", async (req, res) => {
+  try {
+    const categoryId = req.params.categoryId;
+    const deletedCategory = await Category.findByIdAndDelete(categoryId);
+    if (!deletedCategory) {
+      return res.status(404).json({ error: "Category not found." });
+    }
+    res.status(200).json(deletedCategory);
+  } catch (error) {
+    console.log(error);
     res.status(500).json({ error: "Server error." });
   }
 });

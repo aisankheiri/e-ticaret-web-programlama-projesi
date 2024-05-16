@@ -1,6 +1,12 @@
+import {Button} from "antd"
 const AdminLayout = () => {
   return (
-    <div>AdminLayout</div>
+    <div className="admin-layout">
+      <Button type="primary">Primary Button</Button>
+      <div>sidebar</div>
+      <div>header</div>
+      <div>content</div>
+    </div>
   )
 }
 

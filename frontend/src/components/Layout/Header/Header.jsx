@@ -6,9 +6,8 @@ import "./Header.css";
 
 const Header = ({ setIsSearchShow }) => {
   const { cartItems } = useContext(CartContext);
-
+  const user = localStorage.getItem("user");
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
     <header>
@@ -29,7 +28,7 @@ const Header = ({ setIsSearchShow }) => {
             </div>
             <div className="header-left">
               <Link to={"/"} className="logo">
-                LOGO
+                Aisan
               </Link>
             </div>
             <div className="header-center" id="sidebar">
@@ -189,7 +188,7 @@ const Header = ({ setIsSearchShow }) => {
                   </li>
                   <li className="menu-list-item">
                     <Link
-                      to={"blog"}
+                      to={"/blog"}
                       className={`menu-link ${
                         pathname === "/blog" && "active"
                       }`}
@@ -222,9 +221,9 @@ const Header = ({ setIsSearchShow }) => {
                 >
                   <i className="bi bi-search"></i>
                 </button>
-                <a href="#"> 
+                {/* <a href="#">
                   <i className="bi bi-heart"></i>
-                </a>
+                </a> */}
                 <div className="header-cart">
                   <Link to={"/cart"} className="header-cart-link">
                     <i className="bi bi-bag"></i>
@@ -233,6 +232,25 @@ const Header = ({ setIsSearchShow }) => {
                     </span>
                   </Link>
                 </div>
+                {user && (
+                  <button
+                    className="search-button"
+                    onClick={() => {
+                      if (
+                        window.confirm(
+                          "Çıkış yapmak istediğinize emin misiniz?"
+                        )
+                      ) {
+                        {
+                          localStorage.removeItem("user");
+                          window.location.href = "/";
+                        }
+                      }
+                    }}
+                  >
+                    <i className="bi bi-box-arrow-right"></i>
+                  </button>
+                )}
               </div>
             </div>
           </div>

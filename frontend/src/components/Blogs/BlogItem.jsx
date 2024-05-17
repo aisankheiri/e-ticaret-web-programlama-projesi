@@ -1,4 +1,5 @@
-import "./BlogItem.css";
+import "./BlogItem.css"
+
 const BlogItem = () => {
   return (
     <li className="blog-item">

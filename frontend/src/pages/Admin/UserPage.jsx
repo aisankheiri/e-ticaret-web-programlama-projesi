@@ -7,22 +7,22 @@ const UserPage = () => {
   const apiUrl = import.meta.env.VITE_API_BASE_URL;
 
   const columns = [
-    // {
-    //   title: "Avatar",
-    //   dataIndex: "avatar",
-    //   key: "avatar",
-    //   render: (imgSrc) => (
-    //     <img
-    //       src={imgSrc}
-    //       alt="Avatar"
-    //       style={{
-    //         width: "50px",
-    //         height: "50px",
-    //         borderRadius: "50%",
-    //       }}
-    //     />
-    //   ),
-    // },
+    {
+      title: "Avatar",
+      dataIndex: "avatar",
+      key: "avatar",
+      render: (imgSrc) => (
+        <img
+          src={imgSrc}
+          alt="Avatar"
+          style={{
+            width: "50px",
+            height: "50px",
+            borderRadius: "50%",
+          }}
+        />
+      ),
+    },
     {
       title: "Username",
       dataIndex: "username",

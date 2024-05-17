@@ -1,4 +1,5 @@
 import "./CampaignItem.css";
+
 const CampaignItem = () => {
   return (
     <div className="campaign-item">

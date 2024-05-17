@@ -14,28 +14,32 @@ const CartProvider = ({ children }) => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
-  console.log("cart items:", cartItems);
-
   const addToCart = (cartItem) => {
-    // setCartItems([...cartItems, cartItem]);
+    // setCartItems([...cartItems, cartItem]); 1. yol
     setCartItems((prevCart) => [
       ...prevCart,
-      { ...cartItem, quantity: cartItem.quantity ? cartItem.quantity : 1 },
+      {
+        ...cartItem,
+        quantity: cartItem.quantity ? cartItem.quantity : 1,
+      },
     ]);
   };
 
   const removeFromCart = (itemId) => {
     const filteredCartItems = cartItems.filter((cartItem) => {
-      return cartItem.id != itemId;
+      return cartItem._id !== itemId;
     });
+
     setCartItems(filteredCartItems);
   };
+
   return (
     <CartContext.Provider
       value={{
         cartItems,
+        setCartItems,
         addToCart,
-        removeFromCart,
+        removeFromCart, 
       }}
     >
       {children}

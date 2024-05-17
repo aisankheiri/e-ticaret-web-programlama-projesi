@@ -1,8 +1,8 @@
+import { useEffect, useState } from "react";
 import Footer from "../components/Layout/Footer/Footer";
 import Header from "../components/Layout/Header/Header";
 import Proptypes from "prop-types";
 import Search from "../components/Modals/Search/Search";
-import { useEffect, useState } from "react";
 import Dialog from "../components/Modals/Dialog/Dialog";
 
 const MainLayout = ({ children }) => {
@@ -13,10 +13,12 @@ const MainLayout = ({ children }) => {
     const dialogStatus = localStorage.getItem("dialog")
       ? JSON.parse(localStorage.getItem("dialog"))
       : localStorage.setItem("dialog", JSON.stringify(true));
+
     setTimeout(() => {
       setIsDialogShow(dialogStatus);
     }, 2000);
   }, []);
+
   return (
     <div className="main-layout">
       <Dialog isDialogShow={isDialogShow} setIsDialogShow={setIsDialogShow} />

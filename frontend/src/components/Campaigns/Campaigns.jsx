@@ -1,5 +1,6 @@
 import CampaignItem from "./CampaignItem";
-import "./Campaigns.css";
+import "./Campaigns.css"
+
 const Campaigns = () => {
   return (
     <section className="campaigns">

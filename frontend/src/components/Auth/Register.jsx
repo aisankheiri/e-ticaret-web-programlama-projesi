@@ -30,7 +30,7 @@ const Register = () => {
       if (response.ok) {
         const data = await response.json();
         // const { password, ...rest } = data;
-
+        
         localStorage.setItem("user", JSON.stringify(data));
         message.success("Kayıt başarılı.");
         navigate("/");
@@ -51,12 +51,7 @@ const Register = () => {
             <span>
               Username <span className="required">*</span>
             </span>
-            <input
-              type="text"
-              onChange={handleInputChange}
-              name="username"
-              required
-            />
+            <input type="text" onChange={handleInputChange} name="username" required />
           </label>
         </div>
         <div>
@@ -64,12 +59,7 @@ const Register = () => {
             <span>
               Email address <span className="required">*</span>
             </span>
-            <input
-              type="email"
-              onChange={handleInputChange}
-              name="email"
-              required
-            />
+            <input type="email" onChange={handleInputChange} name="email" required />
           </label>
         </div>
         <div>

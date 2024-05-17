@@ -16,7 +16,7 @@ const Header = ({ setIsSearchShow }) => {
           <p>
             SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL
             DELIVERY - OFF 50%!
-            <a href="shop.html"> SHOP NOW</a>
+            <Link to={"/shop"}> SHOP NOW</Link>
           </p>
         </div>
       </div>

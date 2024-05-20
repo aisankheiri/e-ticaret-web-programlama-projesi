@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="contact-top">
         <div className="contact-map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.9633698339308!2d28.929441087738052!3d41.04793012296828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab1d021adf417%3A0xba3a3fdfdbb5f5d!2sEy%C3%BCp%20Sultan%20Camii!5e0!3m2!1str!2str!4v1665091191675!5m2!1str!2str"
+             src="https://www.google.com/maps?q=Ayd%C4%B1nevler%2C+Marmara+%C3%9Cniversitesi+Teknoloji+Fak%C3%BCltesi+Giri%C5%9Fi%2C+%C4%B0dealtepe+Yolu+No%3A17%2C+34854+Maltepe%2F%C4%B0stanbul%2C+T%C3%BCrkiye&ftid=0x14cac7b554e4091d%3A0xc3dacb58d8c29635&entry=gps&lucs=&output=embed"
             width="100%"
             height="500"
             style={{
@@ -74,19 +74,18 @@ const Contact = () => {
                 <div className="contact-info-texts">
                   <strong> Clotya Store</strong>
                   <p className="contact-street">
-                    Clotya Store Germany — 785 15h Street, Office 478/B Green
-                    Mall Berlin, De 81566
+                  İdealtepe Yolu No:17, 34854 Maltepe/İstanbul, Türkiye
                   </p>
                   <a href="tel:Phone: +1 1234 567 88">Phone: +1 1234 567 88</a>
                   <a href="mailto:Email: contact@example.com">
-                    Email: contact@example.com
+                    Email: teknoloji@marmara.edu.tr
                   </a>
                 </div>
               </div>
               <div className="contact-info-item">
                 <div className="contact-info-texts">
                   <strong> Opening Hours</strong>
-                  <p className="contact-date">Monday - Friday : 9am - 5pm</p>
+                  <p className="contact-date">Pazartesi - Cuma: 09:00 - 17:00</p>
                   <p>Weekend Closed</p>
                 </div>
               </div>

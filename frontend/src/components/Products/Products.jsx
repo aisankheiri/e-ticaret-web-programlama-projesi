@@ -82,7 +82,7 @@ const Products = () => {
       <div className="container">
         <div className="section-title">
           <h2>Featured Products</h2>
-          <p>Summer Collection New Morden Design</p>
+          <p>Summer Collection New Modern Design</p>
         </div>
         <div className="product-wrapper product-carousel">
           <Slider {...sliderSettings}>

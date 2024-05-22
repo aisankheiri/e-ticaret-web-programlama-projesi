@@ -3,8 +3,8 @@ import Sliders from "../components/Layout/Slider/Slider";
 import Categories from "../components/Layout/Categories/Categories";
 import Products from "../components/Products/Products";
 import Campaigns from "../components/Campaigns/Campaigns";
-import Blogs from "../components/Blogs/Blogs";
-import Brands from "../components/Brands/Brands";
+// import Blogs from "../components/Blogs/Blogs";
+// import Brands from "../components/Brands/Brands";
 import CampaignSingle from "../components/CampaignSingle/CampaignSingle";
 
 const HomePage = () => {
@@ -15,8 +15,8 @@ const HomePage = () => {
       <Products />
       <Campaigns />
       {/* <Products /> */}
-      <Blogs />
-      <Brands />
+      {/* <Blogs /> */}
+      {/* <Brands /> */}
       <CampaignSingle />
     </React.Fragment>
   );

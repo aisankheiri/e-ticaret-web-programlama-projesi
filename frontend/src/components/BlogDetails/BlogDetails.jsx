@@ -17,7 +17,7 @@ const BlogDetails = () => {
                 <a href="#">COLLECTION</a>
               </div>
               <div className="blog-date">
-                <a href="#">April 25, 2022</a>
+                <a href="#">April 23, 2024</a>
               </div>
               <div className="blog-tags">
                 <a href="#">products</a>,<a href="#">coats</a>

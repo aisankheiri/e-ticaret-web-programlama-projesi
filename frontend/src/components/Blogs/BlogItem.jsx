@@ -8,7 +8,7 @@ const BlogItem = () => {
       </a>
       <div className="blog-info">
         <div className="blog-info-top">
-          <span>25 Feb, 2021 </span>-<span>0 Comments</span>
+          <span>23 March, 2024 </span>-<span>0 Comments</span>
         </div>
         <div className="blog-info-center">
           <a href="#">Aliquam hendrerit mi metus</a>

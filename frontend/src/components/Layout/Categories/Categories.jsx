@@ -30,7 +30,7 @@ const Categories = () => {
       <div className="container">
         <div className="section-title">
           <h2>All Categories</h2>
-          <p>Summer Collection New Morden Design</p>
+          <p>Summer Collection New Modern Design</p>
         </div>
         <ul className="category-list">
           {categories.map((category) => (

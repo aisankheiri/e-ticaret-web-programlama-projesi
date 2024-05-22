@@ -10,7 +10,7 @@ const ShopPage = () => {
       <Categories />
       <Products />
       <CampaignSingle />
-      <Products />
+      {/* <Products /> */}
     </Fragment>
   );
 };

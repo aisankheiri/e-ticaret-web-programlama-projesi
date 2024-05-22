@@ -13,7 +13,7 @@ const ReviewItem = ({ reviewItem }) => {
   return (
     <li className="comment-item">
       <div className="comment-avatar">
-        <img src={user.avatar} alt="" width={60} />
+        {/* <img src={user.avatar} alt="" width={60} /> */}
       </div>
       <div className="comment-text">
         <ul className="comment-star">

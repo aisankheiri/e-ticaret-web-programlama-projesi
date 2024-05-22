@@ -6,7 +6,7 @@ const Footer = () => {
     <React.Fragment>
       <Policy />
       <footer className="footer">
-        <div className="subscribe-row">
+        {/* <div className="subscribe-row">
           <div className="container">
             <div className="footer-row-wrapper">
               <div className="footer-subscribe-wrapper">
@@ -64,14 +64,14 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="widgets-row">
           <div className="container">
             <div className="footer-widgets">
               <div className="brand-info">
                 <div className="footer-logo">
                   <a href="index.html" className="logo">
-                    LOGO
+                    A & K & E & B
                   </a>
                 </div>
                 <div className="footer-desc">
